@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Donasi</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #f99da4;
+            color: white;
+            padding: 12px 20px;
+            font-weight: 500;
+        }
+
+        .donation-box {
+            background-color: #ff99a0;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .donation-box h5 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .donation-box h2 {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .form-control {
+            background-color: #f2f2f2;
+            /* abu-abu muda */
+            border: none;
+            border-radius: 6px;
+        }
+
+        .form-control:focus {
+            background-color: #f2f2f2;
+            box-shadow: 0 0 0 0.2rem rgba(255, 141, 148, 0.3);
+        }
+
+        .btn-confirm {
+            background-color: #ff99a0;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 25px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 500;
+            box-shadow: 0px 4px 10px rgba(255, 153, 160, 0.4);
+        }
+
+        .form-check-label,
+        .form-label {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .terms {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .terms a {
+            color: #ff99a0;
+            text-decoration: none;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container p-0 bg-white min-vh-100 d-flex flex-column" style="max-width:400px;">
+
+        <!-- Header -->
+        <div class="header d-flex align-items-center">
+            <a href="home.html" style="color: white; text-decoration: none;">
+                <i class="bi bi-arrow-left me-2"></i>
+            </a>
+            Konfirmasi Donasi
+        </div>
+
+        <!-- Content -->
+        <div class="container my-3 d-flex justify-content-center">
+            <div class="col-md-12">
+                <div class="donation-box mb-4">
+                    <h6>Donasi Sebesar</h6>
+                    <h2>Rp750.000</h2>
+                </div>
+
+                <!-- Form -->
+                <form action="pilih_pembayaran.html">
+                    <div class="mb-3">
+                        <label class="form-label">Nama</label>
+                        <input type="text" class="form-control" placeholder="">
+                        <div class="form-check mt-1">
+                            <input class="form-check-input" type="checkbox" id="anonim">
+                            <label class="form-check-label" for="anonim">
+                                Sembunyikan Anonim
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">No Whatsapp</label>
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Doa</label>
+                        <textarea class="form-control" rows="3" placeholder=""></textarea>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="agree">
+                        <label class="form-check-label terms" for="agree">
+                            By continuing the payment, you agree to our <a href="#">Terms and Conditions</a> and <a
+                                href="#">Privacy Policy</a>.
+                        </label>
+                    </div>
+
+                    <div class="d-flex mt-4">
+                        <button type="submit" class="btn-confirm flex-grow-1">Konfirmasi</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+</body>
+
+</html>

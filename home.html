@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KitaBantu UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #fefefe;
+        }
+
+        .header {
+            background-color: #ff91b6;
+            padding: 1rem;
+        }
+
+        .search-box input {
+            border-radius: 2rem;
+            padding-left: 2.5rem;
+        }
+
+        .search-box i {
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+            transform: translateY(-50%);
+            color: #aaa;
+        }
+
+        .hero {
+            background-color: #ff6d9d;
+            padding: 1.5rem;
+            color: #333;
+        }
+
+        .category-btn {
+            border-radius: 1.5rem;
+            padding: 0.4rem 1rem;
+            background-color: #f8f9fa;
+            border: none;
+            font-size: 0.9rem;
+            flex: 0 0 auto;
+        }
+
+        .category-btn.active {
+            background-color: #ff6d9d;
+            color: white;
+        }
+
+        .d-flex.overflow-auto {
+            -webkit-overflow-scrolling: touch;
+            /* smooth scroll di iOS */
+            scrollbar-width: none;
+            /* hilangkan scrollbar di Firefox */
+        }
+
+        .d-flex.overflow-auto::-webkit-scrollbar {
+            display: none;
+            /* hilangkan scrollbar di Chrome/Safari */
+        }
+
+        .text-decoration-none {
+            text-decoration: none !important;
+            color: inherit;
+        }
+
+        .campaign-card img {
+            border-radius: 0.75rem;
+        }
+
+        .progress {
+            height: 6px;
+            border-radius: 3px;
+        }
+
+        .info-card {
+            height: 165px;
+            background: #f9dae0;
+        }
+
+        .info-card-body {
+            margin-top: -30px;
+            border-radius: 35px;
+            padding-top: 20px;
+            background: #fffafb;
+        }
+
+        .bottom-nav {
+            background: white;
+            border-top: 1px solid #eee;
+            position: sticky;
+            bottom: 0;
+            padding: 10px 0;
+            border-radius: 25px 25px 0 0;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-item {
+            flex: 1;
+            margin-left: 13px;
+            margin-right: 12px;
+            border-radius: 1.5rem;
+            padding: 8px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: 500;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav-item.active {
+            background-color: #ff6d9d;
+            color: white;
+            font-weight: bold;
+        }
+
+        .search-box input::placeholder {
+            font-size: 0.75rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container p-0 bg-white min-vh-100 d-flex flex-column" style="max-width:400px;">
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="container">
+                <div class="search-box position-relative">
+                    <i class="bi bi-search"></i>
+                    <input type="text" class="form-control" placeholder="Cari Disini">
+                </div>
+            </div>
+        </div>
+
+        <!-- HERO -->
+        <div class="info-card d-flex align-items-center justify-content-between">
+            <div class="info-text flex-grow-1 fs-6 fw-medium" style="padding-left: 30px; margin-top: -25px !important;">
+                Kita Bantu Sesama di Aplikasi <b>KitaBantu</b>
+            </div>
+            <div class="info-img" style="width: 90%;">
+                <img src="image/Mask group.png" alt="KitaBantu" class="img-fluid" style="max-width: 100%;">
+            </div>
+        </div>
+
+        <div class="info-card-body container" style="padding: 20px;">
+
+            <h6 style="font-weight: bold;">Categories</h6>
+
+            <!-- CATEGORIES -->
+            <div class="d-flex overflow-auto pt-2 pb-3" style="gap: 0.5rem; white-space: nowrap;">
+                <a href="kategori.html" class="category-btn active" style="text-decoration: none;"> All</a>
+                <button class="category-btn">Kemanusiaan</button>
+                <button class="category-btn">Zakat</button>
+                <button class="category-btn">Rumah Ibadah</button>
+                <button class="category-btn">Pendidikan</button>
+                <button class="category-btn">Lingkungan</button>
+            </div>
+
+
+            <!-- CAMPAIGN LIST -->
+
+            <div class="campaign-card mb-3">
+                <a href="detail_post.html" style="text-decoration: none; color: inherit;">
+                    <div class="card border-0 shadow-sm p-2">
+                        <div class="row g-2 align-items-center">
+                            <!-- IMAGE -->
+                            <div class="col-4">
+                                <img src="https://badkokasihan.web.id/wp-content/uploads/2024/01/fasi-x11-2023-badko-kasihan-5.jpg"
+                                    class="img-fluid rounded" style="width: 100%;" alt="">
+                            </div>
+                            <!-- TEXT CONTENT -->
+                            <div class="col-8" style="font-size: 12px;">
+                                <small class="text-muted">Yayasan Kita Bantu</small>
+                                <h6 class="fw-bold mt-1 mb-1" style="font-size: 12px;">Sedekah Subuh Bantu Nutrisi Santri
+                                    dan Tahfidz</h6>
+                                <small class="text-danger">⏳ 3 Hari Lagi</small>
+                                <div class="progress mt-2 mb-1">
+                                    <div class="progress-bar bg-danger" style="width: 18%;"></div>
+                                </div>
+                                <small class="fw-bold text-danger">Rp184.000.000</small>
+                                <small class="text-muted"> / Rp1.000.000.000</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="campaign-card mb-3">
+                <div class="card border-0 shadow-sm p-2">
+                    <div class="row g-2 align-items-center">
+                        <!-- IMAGE -->
+                        <div class="col-4">
+                            <img src="https://badkokasihan.web.id/wp-content/uploads/2024/01/fasi-x11-2023-badko-kasihan-5.jpg"
+                                class="img-fluid rounded" style="width: 100%;" alt="">
+                        </div>
+                        <!-- TEXT CONTENT -->
+                        <div class="col-8" style="font-size: 12px;">
+                            <small class="text-muted">Yayasan Kita Bantu</small>
+                            <h6 class="fw-bold mt-1 mb-1" style="font-size: 12px;">Sedekah Subuh Bantu Nutrisi Santri
+                                dan Tahfidz</h6>
+                            <small class="text-danger">⏳ 3 Hari Lagi</small>
+                            <div class="progress mt-2 mb-1">
+                                <div class="progress-bar bg-danger" style="width: 18%;"></div>
+                            </div>
+                            <small class="fw-bold text-danger">Rp184.000.000</small>
+                            <small class="text-muted"> / Rp1.000.000.000</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="campaign-card mb-3">
+                <div class="card border-0 shadow-sm p-2">
+                    <div class="row g-2 align-items-center">
+                        <!-- IMAGE -->
+                        <div class="col-4">
+                            <img src="https://badkokasihan.web.id/wp-content/uploads/2024/01/fasi-x11-2023-badko-kasihan-5.jpg"
+                                class="img-fluid rounded" style="width: 100%;" alt="">
+                        </div>
+                        <!-- TEXT CONTENT -->
+                        <div class="col-8" style="font-size: 12px;">
+                            <small class="text-muted">Yayasan Kita Bantu</small>
+                            <h6 class="fw-bold mt-1 mb-1" style="font-size: 12px;">Sedekah Subuh Bantu Nutrisi Santri
+                                dan Tahfidz</h6>
+                            <small class="text-danger">⏳ 3 Hari Lagi</small>
+                            <div class="progress mt-2 mb-1">
+                                <div class="progress-bar bg-danger" style="width: 18%;"></div>
+                            </div>
+                            <small class="fw-bold text-danger">Rp184.000.000</small>
+                            <small class="text-muted"> / Rp1.000.000.000</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="campaign-card mb-3">
+                <div class="card border-0 shadow-sm p-2">
+                    <div class="row g-2 align-items-center">
+                        <!-- IMAGE -->
+                        <div class="col-4">
+                            <img src="https://badkokasihan.web.id/wp-content/uploads/2024/01/fasi-x11-2023-badko-kasihan-5.jpg"
+                                class="img-fluid rounded" style="width: 100%;" alt="">
+                        </div>
+                        <!-- TEXT CONTENT -->
+                        <div class="col-8" style="font-size: 12px;">
+                            <small class="text-muted">Yayasan Kita Bantu</small>
+                            <h6 class="fw-bold mt-1 mb-1" style="font-size: 12px;">Sedekah Subuh Bantu Nutrisi Santri
+                                dan Tahfidz</h6>
+                            <small class="text-danger">⏳ 3 Hari Lagi</small>
+                            <div class="progress mt-2 mb-1">
+                                <div class="progress-bar bg-danger" style="width: 18%;"></div>
+                            </div>
+                            <small class="fw-bold text-danger">Rp184.000.000</small>
+                            <small class="text-muted"> / Rp1.000.000.000</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTTOM NAV -->
+        <div class="bottom-nav d-flex justify-content-around">
+            <div class="nav-item active">
+                <a href="home.html" class="text-decoration-none">
+                    <i class="fas fa-home" style="padding-right: 10px;"></i>Home
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="riwayat.html" class="text-decoration-none">
+                    <i class="fas fa-history" style="padding-right: 10px;"></i>Riwayat
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="belum_login.html" class="text-decoration-none">
+                    <i class="fas fa-user-circle" style="padding-right: 10px;"></i>Akun
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Donasi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #f99da4;
+            color: white;
+            padding: 12px 20px;
+            font-weight: 500;
+        }
+
+        .donation-card {
+            max-width: 450px;
+            margin: 20px auto;
+        }
+
+        .donation-option {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .donation-option:hover {
+            background-color: #fff0f2;
+            border-color: #f78c95;
+        }
+
+        .donation-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #ffe1e4;
+            color: #f78c95;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-size: 18px;
+        }
+
+        .custom-input {
+            background-color: #f2f2f2;
+            border: none;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 10px;
+        }
+
+        .donation-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 15px;
+        }
+
+        .btn-donasi {
+            background-color: #f78c95;
+            color: white;
+            border-radius: 30px;
+            padding: 12px;
+            font-weight: 600;
+        }
+
+        .btn-donasi:hover {
+            background-color: #f56774;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container p-0 bg-white min-vh-100 d-flex flex-column" style="max-width:400px;">
+
+
+        <!-- Navbar -->
+        <div class="header d-flex align-items-center">
+            <a href="kategori.html" style="color: white; text-decoration: none;">
+                <i class="bi bi-arrow-left me-2"></i>
+            </a> 
+            Donasi
+        </div>
+
+        <!-- Card -->
+        <div class="flex-grow-1 donation-card bg-white rounded p-4 mt-3">
+            <h6 class="fw-bold mb-3">Berapa Donasi Yang Akan Kamu Berikan?</h6>
+
+            <!-- Opsi Donasi -->
+            <div class="donation-option">
+                <div class="donation-icon">❤</div>
+                Rp30.000
+            </div>
+            <div class="donation-option">
+                <div class="donation-icon">❤</div>
+                Rp50.000
+            </div>
+            <div class="donation-option">
+                <div class="donation-icon">❤</div>
+                Rp80.000
+            </div>
+            <div class="donation-option">
+                <div class="donation-icon">❤</div>
+                Rp100.000
+            </div>
+
+            <!-- Input Custom -->
+            <p class="text-center text-muted mt-3 mb-2" style="font-size: 13px;">Atau Masukan Jumlah Yang Diinginkan</p>
+            <input type="text" class="form-control custom-input" value="Rp750.000">
+        </div>
+
+        <div class="px-4 pb-4">
+            <a href="konfirmasi_donasi.html" class="btn btn-donasi w-100">
+                <i class="bi bi-send"></i> Kirim Donasi
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS + Icon -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+
+</html>
