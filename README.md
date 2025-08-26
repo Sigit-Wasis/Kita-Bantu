@@ -52,7 +52,10 @@ Target pengguna:
 
 ### Screenshot
 - **Halaman Utama:**
-  ![Halaman Utama](screenshots/home.png)
+    ![Halaman Utama](screenshots/home.png)
+
+- **Link Figma**
+    ![Link Figma](https://www.figma.com/design/LzVnu7Tx2jX2imDBHMf9fg/KITABANTU?node-id=0-1&p=f&t=UaNpEhYfKgVgeEh9-0)
 
 Untuk lebih banyak screenshot, lihat folder `/screenshots`.
 
