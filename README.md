@@ -53,15 +53,6 @@ Target pengguna:
 ### Screenshot
 - **Halaman Utama:**
   ![Halaman Utama](screenshots/home.png)
-  
-- **Donasi Page:**
-  ![Donasi](screenshots/donasi.png)
-  
-- **Peta Bantuan:**
-  ![Peta](screenshots/map.png)
-  
-- **Dashboard Relawan:**
-  ![Relawan](screenshots/relawan-dashboard.png)
 
 Untuk lebih banyak screenshot, lihat folder `/screenshots`.
 
