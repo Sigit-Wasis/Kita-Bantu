@@ -48,7 +48,7 @@ Target pengguna:
 
 ## 📸 Demo / Screenshot
 ### Demo Live
-- [Link Demo](https://demo.kitabantu.com) (Coming soon)
+- [Link Demo](https://kita-bantu.vercel.app/)
 
 ### Screenshot
 - **Halaman Utama:**
